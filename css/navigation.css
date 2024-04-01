@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  height: 100px;
+  background: #445566;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.logo {
+  line-height: 100px;
+  float: left;
+  text-transform: uppercase;
+}
+
+.nav-bar {
+  float: right;
+  line-height: 100px;
+}
+
+.nav-bar a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+
+.show-button,
+.hide-button {
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.show-button {
+  float: right;
+}
+
+.show-button i {
+  line-height: 100px;
+}
+
+.nav-bar a:hover,
+.show-button:hover,
+.hide-button:hover {
+  color: #3498db;
+}
+
+#chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+@media screen and (max-width: 768px) {
+  .show-button,
+  .hide-button {
+    display: block;
+  }
+  .nav-bar {
+    position: fixed;
+    width: 45%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+    z-index: 1;
+  }
+  .nav-bar a {
+    display: block;
+    padding: 20px;
+  }
+  .hide-button {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .nav-bar {
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 528px) and (max-width: 1024px) {
+  .show-button,
+  .hide-button {
+    display: block;
+  }
+  .nav-bar {
+    position: fixed;
+    width: 45%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    transition: 0.7s;
+    padding: 80px 0;
+    line-height: normal;
+    z-index: 1;
+  }
+  .nav-bar a {
+    display: block;
+    padding: 20px;
+  }
+  .hide-button {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .nav-bar {
+    right: 0;
+  }
+}

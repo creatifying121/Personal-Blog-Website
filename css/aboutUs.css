@@ -1,0 +1,93 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+article {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
+main,
+footer {
+  padding: 1rem;
+}
+
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 0 2rem 0 2rem;
+}
+
+.grid-item {
+  top: 500px;
+  background: #d7dde4;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.profile {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.profile-pic {
+  max-height: 11rem;
+  max-width: 20rem;
+  border-radius: 50%;
+  margin: 0.125rem;
+}
+
+.about_me {
+  grid-column: 3 / span 3;
+  grid-row: 1;
+  padding: 1rem;
+}
+
+.about-me {
+  margin: 1rem;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    display: block !important;
+    /* grid-template-columns: auto; */
+  }
+
+  .profile {
+    grid-row: 1 !important;
+    grid-column: 1 / span 1;
+    margin-bottom: 10px;
+  }
+
+  .about-me {
+    grid-row: 2 !important;
+    grid-column: 1 / span 1;
+  }
+
+  .profile-pic {
+    max-height: 15rem;
+    max-width: 10rem;
+    border-radius: 60%;
+    margin: 0.125rem;
+  }
+}

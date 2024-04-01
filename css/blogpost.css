@@ -1,0 +1,73 @@
+body {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.taj-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  max-width: 70%;
+  height: auto;
+  border-radius: 2.5%;
+}
+
+figcaption {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+blockquote {
+  text-align: center;
+  font-style: italic;
+}
+
+h1 {
+  margin: 30px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.intro {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: justify;
+}
+
+h3,
+h5 {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.content {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: justify;
+}
+
+footer {
+  height: 10vh;
+  background: #131c25;
+  color: #fff;
+  margin: 5vh 0 0 0;
+}
+
+.content-at-footer {
+  text-align: center;
+  padding: 3vh 0 0 0;
+}
+
+@media screen and (min-width: 528px) and (max-width: 1024) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+}

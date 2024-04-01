@@ -1,0 +1,54 @@
+.blog-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  grid-gap: 1rem;
+  margin: 5vh 12vw;
+}
+
+.blog-post {
+  min-height: 50vh;
+  width: 100%;
+  text-align: justify;
+  background: #fff;
+}
+
+.agra-fort,
+.konark-image,
+.stupa-image,
+.taj-image {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 40px;
+}
+
+.agra-fort-content,
+.taj-content,
+.konark-content,
+.sanchi-content {
+  width: 400px;
+}
+
+@media screen and (max-width: 528px) {
+  .blog-grid-container {
+    grid-template-columns: auto auto;
+    margin: 5vh 15vw;
+  }
+
+  .blog-post {
+    grid-column: 1 / span 2;
+  }
+}
+
+@media screen and (max-width: 888px) {
+  .blog-grid-container {
+    grid-template-columns: auto auto;
+    max-width: 100%;
+    width: 100%;
+    margin: 5vh 15vw;
+  }
+
+  .blog-post {
+    grid-column: 1 / span 2;
+  }
+}
